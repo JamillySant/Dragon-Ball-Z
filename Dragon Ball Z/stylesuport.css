@@ -1,0 +1,55 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img_home{
+    width: 1350px;
+    height: 550px;
+}
+.nav{
+    background-color: black;
+    padding: 0;
+    list-style: none;
+}
+.li{
+    display: inline;
+}
+.a{
+    color:white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 25px;
+}
+.a:hover{
+    background-color: rgba(30, 103, 238, 0.733);
+}
+
+body{
+    background-color: rgb(243, 168, 71);
+}
+.logo{
+    height: 450px;
+    width: 1000px;
+    margin: auto;
+    display: block;
+}
+.img_cur{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    display: block;
+}
+.tit{
+    text-align: center;
+    font-family: Andale Mono, monospace;
+
+}
+.parag{
+    font-family: Andale Mono, monospace;
+    font-size: 20px;
+}
+.t{
+    font-family: Andale Mono, monospace;
+}

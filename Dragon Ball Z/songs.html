@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesongs.css">
+    <title>PROJETO</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="li">
+                <a class="a" href="index.html">Home</a></li>
+            <li class="li">
+                <a class="a" href="songs.html">Songs</a></li>
+            <li class="li">
+                <a class="a" href="sayadins.html">Sayajins</a></li>
+            <li class="li">
+                <a class="a" href="index_vilao.html">Vilões</a></li>
+            <li class="li">
+                <a class="a" href="suporte.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+<br>
+<br>
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <div class="player-ctrl">
+      <a id="podcast-play" onclick="playShow()"><i class="ion-ios-play"></i></a>
+      <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="ion-ios-pause"></i></a>
+    </div>
+    
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <div class="player-ctrl2">
+        <a id="podcast-play2" onclick="playShow2()"><i class="ion-ios-play"></i></a>
+        <a id="podcast-pause2" onclick="pauseShow2()" style="display:none;"><i class="ion-ios-pause"></i></a>
+    </div>
+
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <div class="player-ctrl3">
+        <a id="podcast-play3" onclick="playShow3()"><i class="ion-ios-play"></i></a>
+        <a id="podcast-pause3" onclick="pauseShow3()" style="display:none;"><i class="ion-ios-pause"></i></a>
+    </div>
+    
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <div class="player-ctrl4">
+        <a id="podcast-play4" onclick="playShow4()"><i class="ion-ios-play"></i></a>
+        <a id="podcast-pause4" onclick="pauseShow4()" style="display:none;"><i class="ion-ios-pause"></i></a>
+    </div>
+
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <div class="player-ctrl5">
+        <a id="podcast-play5" onclick="playShow5()"><i class="ion-ios-play"></i></a>
+        <a id="podcast-pause5" onclick="pauseShow5()" style="display:none;"><i class="ion-ios-pause"></i></a>
+    </div>
+<br>
+    <audio id="podcast-audio">
+        <source class="aud" src="audio/soundtrack39.mp3" type="audio/mp3">
+    </audio>
+    <audio id="podcast-audio2">
+        <source src="audio/soundtrack40.mp3" type="audio/mp3">
+    </audio>
+    <audio id="podcast-audio3">
+        <source src="audio/soundtrack51.mp3" type="audio/mp3">
+    </audio>
+    <audio id="podcast-audio4">
+        <source src="audio/soundtrack53.mp3" type="audio/mp3">
+    </audio>
+    <audio id="podcast-audio5">
+        <source src="audio/soundtrack84.mp3" type="audio/mp3">
+    </audio>
+    
+    <img src="logo.png" class="imglogo">
+
+<script>
+    var podcastAudio = document.getElementById('podcast-audio');
+    var podcastAudio2 = document.getElementById('podcast-audio2');
+    var podcastAudio3 = document.getElementById('podcast-audio3');
+    var podcastAudio4 = document.getElementById('podcast-audio4');
+    var podcastAudio5 = document.getElementById('podcast-audio5');
+
+    var playBtn = document.getElementById('podcast-play');
+    var playBtn2 = document.getElementById('podcast-play2');
+    var playBtn3 = document.getElementById('podcast-play3');
+    var playBtn4 = document.getElementById('podcast-play4');
+    var playBtn5 = document.getElementById('podcast-play5');
+
+    var pauseBtn = document.getElementById('podcast-pause');
+    var pauseBtn2 = document.getElementById('podcast-pause2');
+    var pauseBtn3 = document.getElementById('podcast-pause3');
+    var pauseBtn4 = document.getElementById('podcast-pause4');
+    var pauseBtn5 = document.getElementById('podcast-pause5');
+
+    var playShow = function() {
+    podcastAudio.play();
+    playBtn.style.display = "none";
+    pauseBtn.style.display = "inline-block";
+    }
+    var playShow2 = function() {
+    podcastAudio2.play();
+    playBtn2.style.display = "none";
+    pauseBtn2.style.display = "inline-block";
+    }
+    var playShow3 = function() {
+    podcastAudio3.play();
+    playBtn3.style.display = "none";
+    pauseBtn3.style.display = "inline-block";
+    }
+    var playShow4 = function() {
+    podcastAudio4.play();
+    playBtn4.style.display = "none";
+    pauseBtn4.style.display = "inline-block";
+    }
+    var playShow5 = function() {
+    podcastAudio5.play();
+    playBtn5.style.display = "none";
+    pauseBtn5.style.display = "inline-block";
+    }
+
+    var pauseShow = function() {
+    podcastAudio.pause();
+    playBtn.style.display = "inline-block";
+    pauseBtn.style.display = "none";
+    }
+    var pauseShow2 = function() {
+    podcastAudio2.pause();
+    playBtn2.style.display = "inline-block";
+    pauseBtn2.style.display = "none";
+    }
+    var pauseShow3 = function() {
+    podcastAudio3.pause();
+    playBtn3.style.display = "inline-block";
+    pauseBtn3.style.display = "none";
+    }
+    var pauseShow4 = function() {
+    podcastAudio4.pause();
+    playBtn4.style.display = "inline-block";
+    pauseBtn4.style.display = "none";
+    }
+    var pauseShow5 = function() {
+    podcastAudio5.pause();
+    playBtn5.style.display = "inline-block";
+    pauseBtn5.style.display = "none";
+    }
+</script>
+</body>
+</html>
