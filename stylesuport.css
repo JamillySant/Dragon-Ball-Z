@@ -33,7 +33,7 @@
     background-color: rgba(30, 103, 238, 0.733);
 }
 body{
-    background-color: rgb(243, 168, 71);
+    background-color: #3c3c3c;
 }
 .logo{
     height: 450px;
@@ -52,12 +52,12 @@ body{
 .tit{
     text-align: center;
     font-family: Andale Mono, monospace;
-
 }
 .parag{
     font-family: Andale Mono, monospace;
     font-size: 20px;
     text-align: justify;
+    padding: 150px 150px;
 }
 .t{
     font-family: Andale Mono, monospace;
