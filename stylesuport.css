@@ -41,12 +41,14 @@ body{
     margin: auto;
     display: block;
 }
-.img_cur{
+.img_cur {
     width: 600px;
     height: 300px;
-    text-align: center;
     display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+    text-align: center;
 }
+
 .tit{
     text-align: center;
     font-family: Andale Mono, monospace;
