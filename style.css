@@ -33,7 +33,21 @@
     background-color: rgba(30, 103, 238, 0.733);
 }
 
-.img_home{
-    width: 1600px;
-    height: 695px;
+/* Imagem responsiva */
+.img_home {
+    width: 100%; /* Ajusta à largura da tela */
+    height: auto; /* Mantém a proporção */
+    max-width: 1600px; /* Limita o tamanho máximo */
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column; /* Menu vertical no celular */
+        align-items: center;
+    }
+    
+    .nav li {
+        margin: 5px 0; /* Reduz espaçamento */
+    }
 }
