@@ -32,15 +32,18 @@
 .nav a:hover {
     background-color: rgba(30, 103, 238, 0.733);
 }
-body{
+
+body {
     background-color: #3c3c3c;
 }
-.logo{
+
+.logo {
     height: 450px;
     width: 1000px;
     margin: auto;
     display: block;
 }
+
 .img_cur {
     width: 600px;
     height: 300px;
@@ -49,17 +52,64 @@ body{
     text-align: center;
 }
 
-.tit{
+.tit {
     text-align: center;
     font-family: Andale Mono, monospace;
 }
-.parag{
+
+.parag {
     font-family: Andale Mono, monospace;
     font-size: 20px;
     text-align: justify;
     padding: 0px 150px;
 }
-.t{
+
+.t {
     font-family: Andale Mono, monospace;
     padding: 0px 150px;   
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+    /* Menu adaptado para coluna */
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav li {
+        margin: 5px 0;
+    }
+    
+    /* Ajusta a logo para ocupar maior parte da tela */
+    .logo {
+        width: 90%;
+        height: auto;
+    }
+    
+    /* Imagem ajustada para telas menores */
+    .img_cur {
+        width: 90%;
+        height: auto;
+    }
+    
+    /* Reduz o espaçamento interno dos parágrafos e textos */
+    .parag,
+    .t {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajuste adicional para telas muito pequenas */
+    .nav a {
+        padding: 10px 15px;
+    }
+    
+    .parag,
+    .t {
+        padding: 0 10px;
+        font-size: 14px;
+    }
 }
